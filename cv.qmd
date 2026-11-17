@@ -12,7 +12,7 @@ page-layout: custom
 <header class="letterhead">
 <h1>Aref Shahbakhsh</h1>
 <p>M.Sc. in Computer Engineering (Computer System Architecture) · AI Research Assistant</p>
-<p><a href="mailto:aref.shahbakhsh@sharif.edu">aref.shahbakhsh@sharif.edu</a> · <a href="https://aref-shahbakhsh.github.io">aref-shahbakhsh.github.io</a> · <a href="https://github.com/aref-shahbakhsh">github.com/aref-shahbakhsh</a></p>
+<p><a href="mailto:aref.shahbakhsh@sharif.edu">aref.shahbakhsh@sharif.edu</a> · <a href="https://aref-shahbakhsh.github.io">aref-shahbakhsh.github.io</a> · <a href="https://github.com/Aref-Shahbakhsh">github.com/aref-shahbakhsh</a></p>
 </header>
 
 <section class="cvs"><h2>Research Interests</h2>
@@ -60,15 +60,30 @@ page-layout: custom
 <section class="cvs"><h2>Honors and Awards</h2>
 <div class="ent"><span class="t">Fellowship, Sharif University of Technology</span><span class="d">2021 – 2024</span><span class="s">As an exceptionally talented student, for the M.Sc. in Computer System Architecture</span></div>
 <div class="ent"><span class="t">Top national rank, graduate entrance exam</span><span class="d">2021</span><span class="s">Ranked 152 (top 1%) among over 12,000 participants in Iran's national graduate entrance exam in Computer Engineering</span></div>
-<div class="ent"><span class="t">Bronze Medalist, National Student Chess Olympiad</span><span class="d">2022</span><span class="s">3rd place nationally as a member of the Sharif University of Technology team</span></div>
-<div class="ent"><span class="t">Gold Medalist, National Student Chess Championship (Region 8)</span><span class="d">2018</span><span class="s">1st place as a member of the University of Sistan and Baluchestan team</span></div>
+<div class="ent"><span class="t">Bronze Medalist, National Student Chess Olympiad (team)</span><span class="d">2022</span><span class="s">3rd place nationally with the Sharif University of Technology team</span></div>
+<div class="ent"><span class="t">Silver Medalist, Sharif University of Technology Chess Championship</span><span class="d">2022</span><span class="s">Second place</span></div>
+<div class="ent"><span class="t">Champion, University of Sistan and Baluchestan Chess Championship</span><span class="d">2019</span><span class="s">First place; won gold and silver medals in several editions</span></div>
+<div class="ent"><span class="t">Gold Medalist, National Student Chess Championship, Region 8 (team)</span><span class="d">2018</span><span class="s">With the University of Sistan and Baluchestan team</span></div>
+<div class="ent"><span class="t">Silver Medalist, National Student Chess Championship, Region 8 (individual, blitz)</span><span class="d">2018</span></div>
 <div class="ent"><span class="t">Partial Fellowship, University of Sistan and Baluchestan</span><span class="d">2016 – 2021</span><span class="s">As an exceptionally talented student, for the B.Sc. in Computer Science</span></div>
+</section>
+
+<section class="cvs"><h2>Selected Projects</h2>
+<div class="ent"><span class="t">Neural Autoregressive Model with Gaussian Mixture</span><span class="d">2025</span><span class="s">Tutorial and implementation of an autoregressive model with Gaussian-mixture conditionals · <a href="https://github.com/Aref-Shahbakhsh/Neural-Generative-Auto-Regressive-Gussian-mixture">GitHub</a></span></div>
+<div class="ent"><span class="t">Harry Potter Magic Wand</span><span class="d">2024</span><span class="s">ESP32 and deep learning, built for the Hardwar 2024 event at Sharif University of Technology · <a href="https://github.com/Aref-Shahbakhsh/Harry_Potter">GitHub</a></span></div>
+<div class="ent"><span class="t">Instagram Bot</span><span class="d">2021</span><span class="s">Automates daily activities such as commenting, following, and liking, mimicking human behavior · <a href="https://github.com/Aref-Shahbakhsh/auto_bot_for_instagram">GitHub</a></span></div>
+<div class="ent"><span class="t">Photo Hider Plus</span><span class="d">2019</span><span class="s">Android app that hides photos from public view · <a href="https://github.com/Aref-Shahbakhsh/photo_hider_plus">GitHub</a></span></div>
 </section>
 
 <section class="cvs"><h2>Technical Skills</h2>
 <div class="ent"><span class="t">Programming</span><span class="s">C++, Verilog, C#, Python, Java, JavaScript, SQL, Tcl</span></div>
 <div class="ent"><span class="t">Frameworks and tools</span><span class="s">PyTorch, TensorFlow, PyTorch Geometric, scikit-learn, Django, React.js</span></div>
 <div class="ent"><span class="t">Software</span><span class="s">MATLAB, ModelSim, VMD, Unity, Android Studio, Unreal Engine, BookSim, Kali Linux</span></div>
+</section>
+
+<section class="cvs"><h2>Hobbies</h2>
+<div class="ent"><span class="t">Chess</span><span class="s">Playing since age 10</span></div>
+<div class="ent"><span class="t">Piano</span><span class="s"><a href="https://www.youtube.com/@Aref_Piano">Piano YouTube channel</a></span></div>
 </section>
 
 <section class="cvs"><h2>Languages</h2>

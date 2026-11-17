@@ -1,35 +1,64 @@
 ---
 pagetitle: "Blog & projects"
-description: "Writing and projects by Aref Shahbakhsh."
+description: "Tutorials, writing, and projects by Aref Shahbakhsh."
 page-layout: custom
 ---
 
 ::: {.wrap}
 ::: {.page-head .wide}
 <h1>Blog</h1>
-<p class="lede">I write about what I am learning and teaching: explanations of AI models for general readers, and notes on the machine learning methods behind my research. This page also collects the software and research projects I have worked on.</p>
+<p class="lede">I write about what I am learning and teaching. My main project here is a tutorial series on generative models, from autoregressive models and VAEs to energy-based, score-based, diffusion, and flow-matching models. This page also collects the software and research projects I have worked on.</p>
 :::
 
 ::: {.blog-cats}
+
+<a class="blog-cat" href="#posts">
+<span class="ic"><i class="bi bi-diagram-3"></i></span>
+<span class="t">Generative models tutorial series</span>
+<span class="d">Intuition, math, and code for autoregressive models, VAEs, energy-based, score-based, diffusion, and flow-matching models.</span>
+<span class="go">Read the posts <i class="bi bi-arrow-down"></i></span>
+</a>
 
 <a class="blog-cat" href="#">
 <span class="ic"><i class="bi bi-newspaper"></i></span>
 <span class="t">Byte Magazine</span>
 <span class="d">Articles explaining AI models for a general readership, written as a science author for Byte Magazine (Spring 2025).</span>
-<span class="go">Coming soon <i class="bi bi-box-arrow-up-right"></i></span>
+<span class="go">Coming soon</span>
 </a>
 
-<a class="blog-cat" href="research.html">
-<span class="ic"><i class="bi bi-cpu"></i></span>
-<span class="t">Research notes</span>
-<span class="d">Notes on graph neural networks, biological language models, and generative models (VAEs, GANs, diffusion).</span>
-<span class="go">Coming soon <i class="bi bi-arrow-right"></i></span>
+<a class="blog-cat" href="https://www.youtube.com/@Aref_Piano">
+<span class="ic"><i class="bi bi-music-note-beamed"></i></span>
+<span class="t">Piano on YouTube</span>
+<span class="d">Away from the screen, I play the piano to rest my mind. My channel collects these recordings.</span>
+<span class="go">Watch <i class="bi bi-box-arrow-up-right"></i></span>
 </a>
 
 :::
 :::
 
 ::: {.band .tint}
+::: {.wrap}
+::: {.band-head}
+<div><h2 id="posts">Posts</h2>
+<p>Tutorials on generative models, newest first.</p></div>
+:::
+
+::: {.card-grid}
+::: {.card}
+<span class="meta">Tutorial · Aug 2025</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/Neural-Generative-Auto-Regressive-Gussian-mixture">Neural autoregressive model with Gaussian mixture</a></h3>
+<p>An implementation of a neural autoregressive model, the foundation behind models like ChatGPT, that uses a Gaussian mixture for each conditional probability. Code and walkthrough on GitHub.</p>
+:::
+::: {.card}
+<span class="meta">Tutorial · Apr 2025</span>
+<h3>Variational autoencoders: basic concepts and foundations</h3>
+<p>Starts from compression and the encoder q(Z|X) and decoder P(X|Z), explains why the posterior is intractable, and sets up variational inference. The variational inference part is still to come.</p>
+:::
+:::
+:::
+:::
+
+::: {.band}
 ::: {.wrap}
 ::: {.band-head}
 <div><h2 id="portfolio">Projects</h2>
@@ -48,9 +77,19 @@ page-layout: custom
 <p>Paratope prediction using antibody and protein language models (published in Scientific Reports).</p>
 :::
 ::: {.card}
+<span class="meta">Hardware + deep learning · 2024</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/Harry_Potter">Harry Potter magic wand</a></h3>
+<p>A magic wand built with an ESP32 and deep learning for the Hardwar 2024 event at Sharif University of Technology.</p>
+:::
+::: {.card}
+<span class="meta">Automation · 2021</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/auto_bot_for_instagram">Instagram bot</a></h3>
+<p>Automates daily activities such as commenting, following, unfollowing, and liking, mimicking human behavior to keep the account safe from bans.</p>
+:::
+::: {.card}
 <span class="meta">Mobile app · 2019</span>
-<h3>Photo Hider Plus</h3>
-<p>An Android app developed as a freelancer and published on Bazaar, the largest Persian app store.</p>
+<h3><a href="https://github.com/Aref-Shahbakhsh/photo_hider_plus">Photo Hider Plus</a></h3>
+<p>An Android app that hides photos from public view, published on Bazaar, the largest Persian app store.</p>
 :::
 ::: {.card}
 <span class="meta">Web · 2018</span>

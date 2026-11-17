@@ -23,9 +23,9 @@ page-layout: custom
 <h2>At a glance</h2>
 <div class="nums"><div><b>2</b><span>papers</span></div><div><b>6</b><span>courses as TA</span></div><div><b>2</b><span>degrees</span></div></div>
 <ul class="profiles-list">
-<li><a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID&hl=en"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar<span class="sub">citations &amp; papers</span></span><span class="go">→</span></a></li>
-<li><a href="https://github.com/aref-shahbakhsh"><i class="bi bi-github"></i><span>GitHub<span class="sub">github.com/aref-shahbakhsh</span></span><span class="go">→</span></a></li>
-<li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><i class="bi bi-linkedin"></i><span>LinkedIn<span class="sub">professional profile</span></span><span class="go">→</span></a></li>
+<li><a href="https://scholar.google.com/citations?user=8554euoAAAAJ&hl=en&oi=ao"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar<span class="sub">citations &amp; papers</span></span><span class="go">→</span></a></li>
+<li><a href="https://github.com/Aref-Shahbakhsh"><i class="bi bi-github"></i><span>GitHub<span class="sub">github.com/aref-shahbakhsh</span></span><span class="go">→</span></a></li>
+<li><a href="https://www.linkedin.com/in/Aref-Shahbakhsh"><i class="bi bi-linkedin"></i><span>LinkedIn<span class="sub">professional profile</span></span><span class="go">→</span></a></li>
 </ul>
 </div>
 :::
@@ -35,7 +35,7 @@ page-layout: custom
 ::: {.wrap}
 ::: {.band-head}
 <div><h2 id="publications">Publications</h2></div>
-<a class="text-link" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID&hl=en">Google Scholar</a>
+<a class="text-link" href="https://scholar.google.com/citations?user=8554euoAAAAJ&hl=en&oi=ao">Google Scholar</a>
 :::
 
 ::: {.pubs}
@@ -92,7 +92,7 @@ page-layout: custom
 ::: {.card}
 <span class="meta">Independent study · 2024 – present</span>
 <h3>Generative models for biomolecules</h3>
-<p>A systematic study of VAEs, GANs, and diffusion / score-based models, with the aim of applying them to the generative and predictive modeling of biomolecules.</p>
+<p>A systematic study of VAEs, GANs, autoregressive, energy-based, score-based, and diffusion models, with the aim of applying them to the generative and predictive modeling of biomolecules. I document what I learn in a <a href="blog.html">tutorial series</a> with code on <a href="https://github.com/Aref-Shahbakhsh">GitHub</a>.</p>
 :::
 
 ::: {.card}
