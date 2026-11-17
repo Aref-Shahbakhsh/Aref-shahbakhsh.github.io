@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Tutorials, writing, and projects by Aref Shahbakhsh.">
+<meta name="author" content="Aref Shahbakhsh">
+<meta name="description" content="Tutorials and notes on generative models and machine learning by Aref Shahbakhsh.">
 
-<title>Blog &amp; projects – Aref Shahbakhsh</title>
+<title>Blog – Aref Shahbakhsh</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,6 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./_assets/images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
@@ -78,25 +81,77 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts-listing'] = new List('listing-posts-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="icon" type="image/svg+xml" href="./_assets/images/favicon.svg">
 <link rel="apple-touch-icon" href="./_assets/images/apple-touch-icon.png">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Blog &amp; projects">
-<meta property="og:description" content="Tutorials, writing, and projects by Aref Shahbakhsh.">
+<link rel="alternate" type="application/rss+xml" title="Aref Shahbakhsh" href="blog.xml" data-external="1"><meta property="og:title" content="Blog">
+<meta property="og:description" content="Tutorials and notes on generative models and machine learning by Aref Shahbakhsh.">
 <meta property="og:image" content="https://aref-shahbakhsh.github.io/_assets/images/Avatar.jpg">
 <meta property="og:site_name" content="Aref Shahbakhsh">
 <meta property="og:image:height" content="640">
 <meta property="og:image:width" content="640">
-<meta name="twitter:title" content="Blog &amp; projects">
-<meta name="twitter:description" content="Tutorials, writing, and projects by Aref Shahbakhsh.">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="Tutorials and notes on generative models and machine learning by Aref Shahbakhsh.">
 <meta name="twitter:image" content="https://aref-shahbakhsh.github.io/_assets/images/Avatar.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -288,20 +343,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -319,7 +378,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
+<div>
+  <div class="description">
+    Tutorials and notes on generative models and machine learning by Aref Shahbakhsh.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Aref Shahbakhsh </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <div class="wrap">
@@ -328,119 +413,244 @@ ul.task-list li input[type="checkbox"] {
 Blog
 </h1>
 <p class="lede">
-I write about what I am learning and teaching. My main project here is a tutorial series on generative models, from autoregressive models and VAEs to energy-based, score-based, diffusion, and flow-matching models. This page also collects the software and research projects I have worked on.
+Tutorials and notes on what I am learning and teaching. My main series covers generative models, from autoregressive models and VAEs to energy-based, score-based, diffusion, and flow-matching models.
 </p>
 </div>
-<div class="blog-cats">
-<p><a class="blog-cat" href="#posts"> <span class="ic"><i class="bi bi-diagram-3"></i></span> <span class="t">Generative models tutorial series</span> <span class="d">Intuition, math, and code for autoregressive models, VAEs, energy-based, score-based, diffusion, and flow-matching models.</span> <span class="go">Read the posts <i class="bi bi-arrow-down"></i></span> </a></p>
-<p><a class="blog-cat" href="#"> <span class="ic"><i class="bi bi-newspaper"></i></span> <span class="t">Byte Magazine</span> <span class="d">Articles explaining AI models for a general readership, written as a science author for Byte Magazine (Spring 2025).</span> <span class="go">Coming soon</span> </a></p>
-<p><a class="blog-cat" href="https://www.youtube.com/@Aref_Piano"> <span class="ic"><i class="bi bi-music-note-beamed"></i></span> <span class="t">Piano on YouTube</span> <span class="d">Away from the screen, I play the piano to rest my mind. My channel collects these recordings.</span> <span class="go">Watch <i class="bi bi-box-arrow-up-right"></i></span> </a></p>
-</div>
-</div>
-<div class="band tint">
-<div class="wrap">
-<div class="band-head">
-<div>
-<h2 id="posts">
-Posts
-</h2>
-<p>
-Tutorials on generative models, newest first.
-</p>
-</div>
-</div>
-<div class="card-grid">
-<div class="card">
-<span class="meta">Tutorial · Aug 2025</span>
-<h3>
-<a href="https://github.com/Aref-Shahbakhsh/Neural-Generative-Auto-Regressive-Gussian-mixture">Neural autoregressive model with Gaussian mixture</a>
+<div id="listing-posts-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1729641600000" data-listing-file-modified-sort="1794883086131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/bengalitrial/index.html" class="no-external-icon">বাংলা ভাষায় আমার লেখা || My Blog in Benglali Language</a>
 </h3>
-<p>
-An implementation of a neural autoregressive model, the foundation behind models like ChatGPT, that uses a Gaussian mixture for each conditional probability. Code and walkthrough on GitHub.
-</p>
+<div class="listing-description">
+<a href="./posts/bengalitrial/index.html" class="no-external-icon">
+
+“বাংলায় ব্লগিং করতে পারলে ভালই হতো” এমন ভাবনা থেকেই ঘাটাঘটি শুরু করলাম কিভাবে নিজের ব্লগে বাংলায় লিখতে পারি। বাংলায় মনের ভাব প্রকাশের অসংখ্য মাধ্যম রয়েছে। সামাজিক যোগাযোগের…
+</a>
 </div>
-<div class="card">
-<span class="meta">Tutorial · Apr 2025</span>
-<h3>
-Variational autoencoders: basic concepts and foundations
+</div>
+<div class="metadata">
+<a href="./posts/bengalitrial/index.html" class="no-external-icon">
+<div class="listing-date">
+Oct 23, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNTdG9jaGFzdGljJTIwR3JhZGllbnQlMjBEZXNjZW50JTJDT3B0aW1pemF0aW9u" data-listing-date-sort="1726704000000" data-listing-file-modified-sort="1794883086145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/sgd/index.html" class="no-external-icon">Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD)</a>
 </h3>
-<p>
-Starts from compression and the encoder q(Z|X) and decoder P(X|Z), explains why the posterior is intractable, and sets up variational inference. The variational inference part is still to come.
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RvY2hhc3RpYyUyMEdyYWRpZW50JTIwRGVzY2VudA=='); return false;">Stochastic Gradient Descent</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('T3B0aW1pemF0aW9u'); return false;">Optimization</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/sgd/index.html" class="no-external-icon">
+
+ <br> GIF Credit: gbhat.com<br>
+<br> Gradient Descent is an optimization algorithm used to minimize the cost function. The cost function <span class="math inline">\(f(\beta)\)</span> measures how well a model with…<span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><br><br><span class="math inline"></span><span class="math inline"></span><br><span class="math display"></span>
+</a>
 </div>
 </div>
+<div class="metadata">
+<a href="./posts/sgd/index.html" class="no-external-icon">
+<div class="listing-date">
+Sep 19, 2024
+</div>
+</a>
 </div>
 </div>
-<div class="band">
-<div class="wrap">
-<div class="band-head">
-<div>
-<h2 id="portfolio">
-Projects
-</h2>
-<p>
-Research code and software I have built.
-</p>
-</div>
-</div>
-<div class="card-grid">
-<div class="card">
-<span class="meta">Research · 2025</span>
-<h3>
-LGLoc
+<div class="quarto-post image-right" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNBbGdvcml0aG1pYyUyMENvbXBsZXhpdHk=" data-listing-date-sort="1719792000000" data-listing-file-modified-sort="1794883086138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1051">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/matmul/index.html" class="no-external-icon">Matrix multiplication: Let’s make it less expensive!</a>
 </h3>
-<p>
-Language model-driven graph neural network for mRNA subcellular localization (published in Scientific Reports).
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0YXRpb25hbCUyME1hdGhlbWF0aWNz'); return false;">Computational Mathematics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxnb3JpdGhtaWMlMjBDb21wbGV4aXR5'); return false;">Algorithmic Complexity</div>
+
 </div>
-<div class="card">
-<span class="meta">Research · 2024</span>
-<h3>
-ParaAntiProt
+<div class="listing-description">
+<a href="./posts/matmul/index.html" class="no-external-icon">
+Have you ever wondered why your code takes forever to run? Sometimes a simple code may take significant time because of an inefficient implementation approach. Let’s take a…
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/matmul/index.html" class="no-external-icon">
+<div class="listing-date">
+Jul 1, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNBbGdvcml0aG1pYyUyMENvbXBsZXhpdHklMkNQcm9ncmFtbWluZyUyQ0NvbXB1dGVyJTIwU2NpZW5jZQ==" data-listing-date-sort="1636416000000" data-listing-file-modified-sort="1794883086135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5041">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/lu/index.html" class="no-external-icon">LU Factorization of a Full rank Matrix using Fortran</a>
 </h3>
-<p>
-Paratope prediction using antibody and protein language models (published in Scientific Reports).
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0YXRpb25hbCUyME1hdGhlbWF0aWNz'); return false;">Computational Mathematics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWxnb3JpdGhtaWMlMjBDb21wbGV4aXR5'); return false;">Algorithmic Complexity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvZ3JhbW1pbmc='); return false;">Programming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBTY2llbmNl'); return false;">Computer Science</div>
+
 </div>
-<div class="card">
-<span class="meta">Hardware + deep learning · 2024</span>
-<h3>
-<a href="https://github.com/Aref-Shahbakhsh/Harry_Potter">Harry Potter magic wand</a>
+<div class="listing-description">
+<a href="./posts/lu/index.html" class="no-external-icon">
+<strong>You may also like</strong>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/lu/index.html" class="no-external-icon">
+<div class="listing-date">
+Nov 9, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="QXBwbGllZCUyME1hdGhlbWF0aWNzJTJDTWF0aCUyMEJpb2xvZ3klMkNNYXRoZW1hdGljYWwlMjBNb2RlbGluZw==" data-listing-date-sort="1614038400000" data-listing-file-modified-sort="1794883086138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="519">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/mathbiology/index.html" class="no-external-icon">Modeling viral disease</a>
 </h3>
-<p>
-A magic wand built with an ESP32 and deep learning for the Hardwar 2024 event at Sharif University of Technology.
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXBwbGllZCUyME1hdGhlbWF0aWNz'); return false;">Applied Mathematics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aCUyMEJpb2xvZ3k='); return false;">Math Biology</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY2FsJTIwTW9kZWxpbmc='); return false;">Mathematical Modeling</div>
+
 </div>
-<div class="card">
-<span class="meta">Automation · 2021</span>
-<h3>
-<a href="https://github.com/Aref-Shahbakhsh/auto_bot_for_instagram">Instagram bot</a>
+<div class="listing-description">
+<a href="./posts/mathbiology/index.html" class="no-external-icon">
+Consider the spreading of a highly communicable disease on an isolated island with population size <span class="math inline">\(N\)</span>. A portion of the population travels abroad and returns to the…<span class="math inline"></span><span class="math inline"></span><span class="math inline"></span>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/mathbiology/index.html" class="no-external-icon">
+<div class="listing-date">
+Feb 23, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611532800000" data-listing-file-modified-sort="1794883086131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/eigen/index.html" class="no-external-icon">Generalized eigenvectors and eigenspaces</a>
 </h3>
-<p>
-Automates daily activities such as commenting, following, unfollowing, and liking, mimicking human behavior to keep the account safe from bans.
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGluZWFyJTIwQWxnZWJyYQ=='); return false;">Linear Algebra</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY3M='); return false;">Mathematics</div>
+
 </div>
-<div class="card">
-<span class="meta">Mobile app · 2019</span>
-<h3>
-<a href="https://github.com/Aref-Shahbakhsh/photo_hider_plus">Photo Hider Plus</a>
+<div class="listing-description">
+<a href="./posts/eigen/index.html" class="no-external-icon">
+
+Definition: Let <span class="math inline">\(\alpha\in End(V)\)</span> and <span class="math inline">\(\lambda\in spec(\alpha)\)</span>. A non-zero vector <span class="math inline">\(v\)</span> is called a generalized eigenvector vector of <span class="math inline">\(\alpha\)</span> associated with <span class="math inline">\(\lam…</span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/eigen/index.html" class="no-external-icon">
+<div class="listing-date">
+Jan 25, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611446400000" data-listing-file-modified-sort="1794883086146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="996">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/someproofs/index.html" class="no-external-icon">Some Linear Algebra Proofs</a>
 </h3>
-<p>
-An Android app that hides photos from public view, published on Bazaar, the largest Persian app store.
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGluZWFyJTIwQWxnZWJyYQ=='); return false;">Linear Algebra</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY3M='); return false;">Mathematics</div>
+
 </div>
-<div class="card">
-<span class="meta">Web · 2018</span>
-<h3>
-University website
+<div class="listing-description">
+<a href="./posts/someproofs/index.html" class="no-external-icon">
+<strong>Proof</strong>: To prove this, we will use two known properties of matrices.
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/someproofs/index.html" class="no-external-icon">
+<div class="listing-date">
+Jan 24, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611187200000" data-listing-file-modified-sort="1794883086138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/matrixrep/index.html" class="no-external-icon">Matrix Representation: Change of Basis</a>
 </h3>
-<p>
-Frontend development for part of the University of Sistan and Baluchestan website.
-</p>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGluZWFyJTIwQWxnZWJyYQ=='); return false;">Linear Algebra</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY3M='); return false;">Mathematics</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/matrixrep/index.html" class="no-external-icon">
+
+Let <span class="math inline">\(\alpha: \mathcal{P}_2(\mathbb{R}) \longrightarrow M_{2\times 2}(\mathbb{R})\)</span> be defined by
+
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/matrixrep/index.html" class="no-external-icon">
+<div class="listing-date">
+Jan 21, 2021
+</div>
+</a>
 </div>
 </div>
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
+</div>
+<div style="height:4rem">
+
+</div>
+
 
 
 
