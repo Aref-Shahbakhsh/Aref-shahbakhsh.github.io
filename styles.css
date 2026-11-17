@@ -1,3 +1,19 @@
+/* ---------- hide the automatic author/title block ---------- */
+/* On the custom pages (Home, About, Research, Projects, Blog, CV) hide it completely */
+.page-layout-custom #title-block-header,
+.page-layout-custom header.quarto-title-block,
+.page-layout-custom .quarto-title-meta,
+.page-layout-custom .quarto-title-banner {
+  display: none !important;
+}
+
+/* Never show an author anywhere, including blog posts */
+p.author,
+.quarto-title-meta-author,
+.quarto-title-author-name,
+.quarto-title-meta-column-start {
+  display: none !important;
+}
 /* =========================================================================
    rispace — redesign v1
    Times New Roman throughout.

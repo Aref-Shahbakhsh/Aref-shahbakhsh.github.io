@@ -37,38 +37,15 @@
   },
   {
     "listing": "/posts/webtemplate/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/miscellaneous.html",
-    "items": [
-      "/posts/bengalitrial/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/blog.html",
-    "items": [
-      "/portfolio/spd/finance/index.html",
-      "/portfolio/spd/holmc/index.html",
-      "/portfolio/spd/webapp/index.html",
-      "/portfolio/spd/desgld/index.html",
-      "/portfolio/dsp/autoloan/index.html",
-      "/portfolio/dsp/nlp-sales/index.html",
-      "/portfolio/dsp/medicalcost/index.html",
-      "/portfolio/dsp/dp-nlp/index.html",
-      "/portfolio/dsp/lendingclub/index.html",
-      "/portfolio/dsp/ecommerce/index.html",
-      "/portfolio/dsp/titanic/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/mathematics.html",
@@ -129,5 +106,9 @@
       "/posts/someproofs/index.html",
       "/posts/bengalitrial/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": []
   }
 ]

@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Aref Shahbakhsh">
 <meta name="description" content="Building a website with Quarto, writing in Bengali, and other notes.">
 
-<title>Miscellaneous – Mohammad Rafiqul Islam</title>
+<title>Miscellaneous – Aref Shahbakhsh</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,17 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a69ced6038d3877ce07f28f544c6cf8f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-ddd39223efcf1e1960c36e0bcd084f75.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a69ced6038d3877ce07f28f544c6cf8f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fae586d2e5de74848a253728b17586a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5cc7ca6eb36dcb3f2ce3438e23677dac.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fae586d2e5de74848a253728b17586a.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-668b8c4c88d5d5a33e5ebfad60353caf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ed60b4568be9625e69269519dcf610f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-668b8c4c88d5d5a33e5ebfad60353caf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7312c46e88370525746533b37039aacd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-a69e26a9abd44e30332bd9a4e030d015.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-7312c46e88370525746533b37039aacd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -102,15 +104,6 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J42B20L4ER"></script>
-
-<script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-J42B20L4ER', { 'anonymize_ip': true});
-</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="icon" type="image/svg+xml" href="./_assets/images/favicon.svg">
 <link rel="apple-touch-icon" href="./_assets/images/apple-touch-icon.png">
@@ -129,7 +122,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -146,13 +139,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Miscellaneous – Mohammad Rafiqul Islam">
+<meta property="og:title" content="Miscellaneous – Aref Shahbakhsh">
 <meta property="og:description" content="Building a website with Quarto, writing in Bengali, and other notes.">
-<meta property="og:image" content="https://rispace.github.io/posts/bengalitrial/ben.svg">
-<meta property="og:site_name" content="Mohammad Rafiqul Islam">
-<meta name="twitter:title" content="Miscellaneous – Mohammad Rafiqul Islam">
+<meta property="og:image" content="https://aref-shahbakhsh.github.io/_assets/images/Avatar.jpg">
+<meta property="og:site_name" content="Aref Shahbakhsh">
+<meta name="twitter:title" content="Miscellaneous – Aref Shahbakhsh">
 <meta name="twitter:description" content="Building a website with Quarto, writing in Bengali, and other notes.">
-<meta name="twitter:image" content="https://rispace.github.io/posts/bengalitrial/ben.svg">
+<meta name="twitter:image" content="https://aref-shahbakhsh.github.io/_assets/images/Avatar.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -326,7 +319,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./_assets/images/mri-logo.svg" alt="MRI — Mohammad Rafiqul Islam, home" class="navbar-logo">
+    <img src="./_assets/images/mri-logo.svg" alt="" class="navbar-logo light-content">
+    <img src="./_assets/images/mri-logo.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -340,24 +334,24 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">CV</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Notebook</span></a>
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -372,7 +366,8 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -391,6 +386,12 @@ window.Quarto = {
 
 <div class="quarto-title-meta column-page-left">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Aref Shahbakhsh </p>
+          </div>
+  </div>
     
   
     
@@ -429,30 +430,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1729659600000" data-listing-file-modified-sort="1791767010000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
-<div class="thumbnail"><a href="./posts/bengalitrial/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/bengalitrial/ben.svg" class="thumbnail-image" style="height: 140px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/bengalitrial/index.html" class="no-external">বাংলা ভাষায় আমার লেখা || My Blog in Benglali Language</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/bengalitrial/index.html" class="no-external">
-
-“বাংলায় ব্লগিং করতে পারলে ভালই হতো” এমন ভাবনা থেকেই ঘাটাঘটি শুরু করলাম কিভাবে নিজের ব্লগে বাংলায় লিখতে পারি। বাংলায় মনের ভাব প্রকাশের অসংখ্য মাধ্যম রয়েছে। সামাজিক যোগাযোগের…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/bengalitrial/index.html" class="no-external">
-<div class="listing-date">
-October 23, 2024
-</div>
-<div class="listing-reading-time">1 min</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -631,13 +609,14 @@ document.addEventListener("DOMContentLoaded", function () {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -652,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rispace\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/aref-shahbakhsh\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -989,19 +968,19 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <div class="foot-col">
-<p><a class="foot-mark" href="./index.html" aria-label="Home"><img src="./_assets/images/mri-logo.svg" alt="MRI"></a> <span>Copyright 2026 @ Dr.&nbsp;Rafiq Islam</span> <span>All rights reserved</span> <span><a href="./LICENSE.txt">License</a></span> <span>Powered by <a href="https://quarto.org/">Quarto</a></span></p>
+<p><a class="foot-mark" href="./index.html" aria-label="Home"><img src="./_assets/images/mri-logo.svg" alt="Logo"></a> <span>Copyright 2026 @ Aref Shahbakhsh</span> <span>All rights reserved</span> <span><a href="./LICENSE.txt">License</a></span> <span>Powered by <a href="https://quarto.org/">Quarto</a></span></p>
 </div>
 </div>   
     <div class="nav-footer-center">
 <div class="foot-col">
-<p><strong>Contact</strong> <span>Department of Mathematics</span> <span>Iowa State University</span> <span>Room 461, Carver Hall</span> <span>411 Morrill Road</span> <span>Ames, IA 50011</span> <span><a href="mailto:mri@iastate.edu">mri@iastate.edu</a></span></p>
+<p><strong>Contact</strong> <span>Department of Computer Engineering</span> <span>Sharif University of Technology</span> <span><a href="mailto:aref.shahbakhsh@sharif.edu">aref.shahbakhsh@sharif.edu</a></span></p>
 </div>
 </div>
     <div class="nav-footer-right">
 <div class="foot-col">
 <strong>Connect</strong>
 <div class="foot-links">
-<p><a href="mailto:mri@iastate.edu"><i class="bi bi-envelope"></i>Email</a> <a href="https://github.com/rispace"><i class="bi bi-github"></i>GitHub</a> <a href="https://www.linkedin.com/in/mohammad-rafiqul-islam/"><i class="bi bi-linkedin"></i>LinkedIn</a> <a href="https://scholar.google.com/citations?user=gTz5r68AAAAJ&amp;hl=en"><i class="bi bi-mortarboard"></i>Google Scholar</a> <a href="https://youtube.com/@quanttube"><i class="bi bi-youtube"></i>YouTube</a> <a href="https://twitter.com/rafiqr35"><i class="bi bi-twitter"></i>Twitter</a></p>
+<p><a href="mailto:aref.shahbakhsh@sharif.edu"><i class="bi bi-envelope"></i>Email</a> <a href="https://github.com/Aref-Shahbakhsh"><i class="bi bi-github"></i>GitHub</a> <a href="https://www.linkedin.com/in/Aref-Shahbakhsh"><i class="bi bi-linkedin"></i>LinkedIn</a> <a href="https://scholar.google.com/citations?user=8554euoAAAAJ&amp;hl=en&amp;oi=ao"><i class="bi bi-mortarboard"></i>Google Scholar</a> <a href="https://www.youtube.com/@Aref_Piano"><i class="bi bi-youtube"></i>Piano channel</a></p>
 </div>
 </div>
 </div>
