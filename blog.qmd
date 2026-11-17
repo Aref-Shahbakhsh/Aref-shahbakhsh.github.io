@@ -1,69 +1,29 @@
 ---
-pagetitle: "Blogs & projects"
-description: "Writing on data science, algorithms, statistics and probability, plus software and data-science projects."
+pagetitle: "Blog & projects"
+description: "Writing and projects by Aref Shahbakhsh."
 page-layout: custom
-aliases:
-  - portfolio.html
-listing:
-  - id: spd-projects
-    contents: "portfolio/spd/*/index.qmd"
-    type: grid
-    sort: "date desc"
-    grid-columns: 3
-    fields: [image, date, title]
-    date-format: "MMMM YYYY"
-    image-height: 170px
-  - id: ds-projects
-    contents: "portfolio/dsp/*/index.qmd"
-    type: grid
-    sort: "date desc"
-    grid-columns: 3
-    fields: [image, date, title]
-    date-format: "MMMM YYYY"
-    image-height: 170px
 ---
 
 ::: {.wrap}
 ::: {.page-head .wide}
-<h1>Blogs</h1>
-<p class="lede">I often write about what I am learning, teaching, or working through: the mathematics behind machine learning algorithms, coding problems, ideas from statistics and probability, and the occasional note on something else entirely. This page gathers that writing, along with the software and data-science projects I have built. The writing is organised into five collections, each of which opens in a new tab.</p>
+<h1>Blog</h1>
+<p class="lede">I write about what I am learning and teaching: explanations of AI models for general readers, and notes on the machine learning methods behind my research. This page also collects the software and research projects I have worked on.</p>
 :::
 
 ::: {.blog-cats}
 
-<a class="blog-cat" href="https://rispace.github.io/dsandml/" target="_blank" rel="noopener">
+<a class="blog-cat" href="#">
+<span class="ic"><i class="bi bi-newspaper"></i></span>
+<span class="t">Byte Magazine</span>
+<span class="d">Articles explaining AI models for a general readership, written as a science author for Byte Magazine (Spring 2025).</span>
+<span class="go">Coming soon <i class="bi bi-box-arrow-up-right"></i></span>
+</a>
+
+<a class="blog-cat" href="research.html">
 <span class="ic"><i class="bi bi-cpu"></i></span>
-<span class="t">Data Science &amp; Machine Learning</span>
-<span class="d">Machine learning algorithms in Python, from linear models to deep learning, alongside the data-science workflow: collection, cleaning, EDA, evaluation, and model optimization.</span>
-<span class="go">Open the blog <i class="bi bi-box-arrow-up-right"></i></span>
-</a>
-
-<a class="blog-cat" href="https://rispace.github.io/letscode/" target="_blank" rel="noopener">
-<span class="ic"><i class="bi bi-diagram-3"></i></span>
-<span class="t">Data Structures &amp; Algorithms</span>
-<span class="d">LeetCode-style problems worked through in Python: binary search, arrays, strings, sorting, graph search, and dynamic programming.</span>
-<span class="go">Open the blog <i class="bi bi-box-arrow-up-right"></i></span>
-</a>
-
-<a class="blog-cat" href="https://rispace.github.io/statandprob/" target="_blank" rel="noopener">
-<span class="ic"><i class="bi bi-dice-5"></i></span>
-<span class="t">Statistics &amp; Probability</span>
-<span class="d">Notes on basic statistics and probability: distributions, estimation, and the ideas that underpin inference and sampling.</span>
-<span class="go">Open the blog <i class="bi bi-box-arrow-up-right"></i></span>
-</a>
-
-<a class="blog-cat" href="mathematics.qmd" target="_blank" rel="noopener">
-<span class="ic"><i class="bi bi-calculator"></i></span>
-<span class="t">Mathematics</span>
-<span class="d">Linear algebra notes and proofs, numerical linear algebra, gradient methods for optimization, and mathematical modeling in biology.</span>
-<span class="go">Open the posts <i class="bi bi-box-arrow-up-right"></i></span>
-</a>
-
-<a class="blog-cat" href="miscellaneous.qmd" target="_blank" rel="noopener">
-<span class="ic"><i class="bi bi-journal-text"></i></span>
-<span class="t">Miscellaneous</span>
-<span class="d">Everything else: building a personal website with Quarto, writing in Bengali, and other notes that do not fit a single subject.</span>
-<span class="go">Open the posts <i class="bi bi-box-arrow-up-right"></i></span>
+<span class="t">Research notes</span>
+<span class="d">Notes on graph neural networks, biological language models, and generative models (VAEs, GANs, diffusion).</span>
+<span class="go">Coming soon <i class="bi bi-arrow-right"></i></span>
 </a>
 
 :::
@@ -72,18 +32,31 @@ listing:
 ::: {.band .tint}
 ::: {.wrap}
 ::: {.band-head}
-<div><h2 id="portfolio">Development &amp; Deployment</h2>
-<p>Software I have written and data-science projects I have worked on.</p></div>
+<div><h2 id="portfolio">Projects</h2>
+<p>Research code and software I have built.</p></div>
 :::
 
-<h3 class="port-h">Software, packages &amp; apps</h3>
-
-::: {#spd-projects}
+::: {.card-grid}
+::: {.card}
+<span class="meta">Research · 2025</span>
+<h3>LGLoc</h3>
+<p>Language model-driven graph neural network for mRNA subcellular localization (published in Scientific Reports).</p>
 :::
-
-<h3 class="port-h">Data science &amp; machine learning projects</h3>
-
-::: {#ds-projects}
+::: {.card}
+<span class="meta">Research · 2024</span>
+<h3>ParaAntiProt</h3>
+<p>Paratope prediction using antibody and protein language models (published in Scientific Reports).</p>
+:::
+::: {.card}
+<span class="meta">Mobile app · 2019</span>
+<h3>Photo Hider Plus</h3>
+<p>An Android app developed as a freelancer and published on Bazaar, the largest Persian app store.</p>
+:::
+::: {.card}
+<span class="meta">Web · 2018</span>
+<h3>University website</h3>
+<p>Frontend development for part of the University of Sistan and Baluchestan website.</p>
+:::
 :::
 :::
 :::

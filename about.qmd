@@ -1,6 +1,6 @@
 ---
-pagetitle: "About · Rafiq Islam"
-description: "Background, path, and contact details for Rafiq Islam."
+pagetitle: "About · Aref Shahbakhsh"
+description: "Background, path, and contact details for Aref Shahbakhsh."
 page-layout: custom
 ---
 
@@ -8,50 +8,55 @@ page-layout: custom
 
 ::: {.about-grid}
 ::: {.portrait}
-<figure class="portrait-frame"><img src="_assets/images/rafiq-islam.jpeg" alt="Portrait of Mohammad Rafiqul Islam"></figure>
+<figure class="portrait-frame"><img src="_assets/images/Avatar.jpg" alt="Portrait of Aref Shahbakhsh"></figure>
 <div class="contact">
-<b>Mohammad Rafiqul Islam</b>
-Postdoctoral Research Associate<br>
-Department of Mathematics, Iowa State University<br>
-[Carver Hall, Room 461](https://maps.app.goo.gl/AXzBwijj2KkxnFDK9) · 411 Morrill Road, Ames, IA 50011<br>
-[mri@iastate.edu](mailto:mri@iastate.edu)
+<b>Aref Shahbakhsh</b>
+M.Sc. in Computer Engineering<br>
+Department of Computer Engineering, Sharif University of Technology<br>
+Tehran, Iran<br>
+[aref.shahbakhsh@sharif.edu](mailto:aref.shahbakhsh@sharif.edu)
 </div>
 <div class="btn-row" style="margin-top:1.1rem">
-<a class="btn-r" href="https://www.linkedin.com/in/mohammad-rafiqul-islam/"><i class="bi bi-linkedin"></i> LinkedIn</a>
-<a class="btn-r" href="https://youtube.com/@quanttube"><i class="bi bi-youtube"></i> QuantTube</a>
+<a class="btn-r" href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a class="btn-r" href="https://github.com/aref-shahbakhsh"><i class="bi bi-github"></i> GitHub</a>
 </div>
 :::
 
 ::: {}
 ::: {.prose}
-I am a postdoctoral research associate in probability theory in the Mathematics Department at Iowa State University, where I work with [David P. Herzog](https://faculty.sites.iastate.edu/dherzog/). I earned my Ph.D. in Mathematics from Florida State University in summer 2026 under the supervision of [Lingjiong Zhu](https://www.math.fsu.edu/DepartmentNews/Articles/Fac_Zhu.math). My dissertation is *Advances in Langevin Algorithms for Decentralized, Constrained, and Accelerated Sampling*.
+I am a machine learning researcher with a background in computer engineering. I completed my M.Sc. in Computer Engineering (Computer Systems Architecture) at Sharif University of Technology in 2024, advised by Dr. Somayyeh Koohi. My thesis, *Prediction of mRNA Subcellular Localization using Deep Learning*, combined a graph neural network over mRNA secondary structure with language-model sequence embeddings to predict localization across five subcellular compartments.
 
-I hold a B.S. in Mathematics from the [University of Dhaka](https://www.du.ac.bd), with minors in statistics, physics, and computer science, and an integrated master's in Applied Mathematics from the same university. During my master's I passed several professional exams from the [Institute and Faculty of Actuaries (IFoA)](https://www.ifoa.org.uk), equivalent to the Society of Actuaries' Exams P, FM, and Life Contingencies. I then spent two years in the Bangladeshi life-insurance industry, pricing products, computing reserves, and working with consulting actuaries on actuarial valuations.
+Before that, I earned a B.Sc. in Computer Science at the University of Sistan and Baluchestan, graduating among the top students of my class. My bachelor's thesis, supervised by Dr. M. M. Keikha, earned a grade of 20/20. In 2021 I ranked 152nd (top 1%) among more than 12,000 participants in Iran's national graduate entrance exam in Computer Engineering.
 
-In 2018 I moved to the United States for a second master's, in mathematics with a focus on statistics and data analytics, at [Youngstown State University](https://www.ysu.edu) in Ohio. Along the way I became more and more drawn to data science, machine learning, and the mathematics underneath them. That interest led to a Ph.D. in theoretical machine learning, and from there to my current work on stochastic dynamics and sampling.
+Since my master's I have been studying generative models in depth: VAEs, GANs, and diffusion and score-based models. I am particularly interested in applying them to the generative and predictive modeling of biomolecules, and I am applying to PhD programs to pursue this direction.
+
+Alongside research, I have spent several years as a teaching assistant, from programming fundamentals to bioinformatics, and I enjoy explaining AI to general audiences.
 :::
 
 <h2 style="font-size:1.35rem;margin:2.6rem 0 1.2rem">The path so far</h2>
 <ol class="path">
-<li class="here"><time>2026 –</time><div><b>Postdoctoral Research Associate</b><span>Iowa State University · probability, with David P. Herzog</span></div></li>
-<li><time>2021 – 26</time><div><b>Ph.D. in Mathematics</b><span>Florida State University · advised by Lingjiong Zhu</span></div></li>
-<li><time>2018 – 20</time><div><b>M.S. in Mathematics</b><span>Youngstown State University · statistics &amp; data analytics; SOA Exams P and FM</span></div></li>
-<li><time>2016 – 18</time><div><b>Life insurance industry</b><span>Sandhani Life (actuarial trainee executive), then Delta Life (assistant vice president), Dhaka</span></div></li>
-<li><time>2014 – 16</time><div><b>B.S. Mathematics &amp; M.S. Applied Mathematics</b><span>University of Dhaka · IFoA professional exams</span></div></li>
+<li class="here"><time>2024 –</time><div><b>Independent study of generative models</b><span>VAEs, GANs, diffusion / score-based models · preparing PhD applications</span></div></li>
+<li><time>2021 – 24</time><div><b>M.Sc. in Computer Engineering</b><span>Sharif University of Technology · Computer Systems Architecture · advised by Dr. S. Koohi · GPA 3.6/4</span></div></li>
+<li><time>2019 – 21</time><div><b>Volunteer Software Engineer</b><span>Taftan Intelligent Programmers · Android development</span></div></li>
+<li><time>2016 – 21</time><div><b>B.Sc. in Computer Science</b><span>University of Sistan and Baluchestan · among the top graduates</span></div></li>
 </ol>
 
 <h2 style="font-size:1.35rem;margin:2.6rem 0 1.2rem">Beyond the papers</h2>
 ::: {.card-grid}
 ::: {.card}
-<span class="meta">Video</span>
-<h3>[QuantTube](https://youtube.com/@quanttube)</h3>
-<p>A YouTube channel for mathematical and quantitative topics.</p>
+<span class="meta">Chess</span>
+<h3>National student chess medals</h3>
+<p>Bronze medalist at the National Student Chess Olympiad (2022) with the Sharif team, and gold medalist at the National Student Chess Championship, Region 8 (2018).</p>
 :::
 ::: {.card}
-<span class="meta">Off the clock</span>
-<h3>Bamboo flute</h3>
-<p>An enthusiastic amateur. I speak Bengali natively and English fluently.</p>
+<span class="meta">Writing</span>
+<h3>Science writing</h3>
+<p>Author at Byte Magazine, explaining AI models for a general readership (2025).</p>
 :::
+::: {.card}
+<span class="meta">Languages</span>
+<h3>Persian and English</h3>
+<p>Persian is my native language. I work comfortably in English (TOEFL score on request).</p>
 :::
 :::
 :::
