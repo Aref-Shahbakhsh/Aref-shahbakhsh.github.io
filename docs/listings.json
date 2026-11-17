@@ -45,7 +45,9 @@
   },
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/posts/webtemplate/index.html"
+    ]
   },
   {
     "listing": "/mathematics.html",
@@ -109,6 +111,8 @@
   },
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/posts/webtemplate/index.html"
+    ]
   }
 ]
