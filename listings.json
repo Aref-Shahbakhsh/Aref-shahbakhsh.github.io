@@ -1,143 +1,22 @@
 [
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/bengalitrial/index.html",
-      "/posts/sgd/index.html",
-      "/posts/matmul/index.html",
-      "/posts/lu/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/eigen/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/matrixrep/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/mathematics.html",
-    "items": [
-      "/posts/sgd/index.html",
-      "/posts/matmul/index.html",
-      "/posts/lu/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/eigen/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/matrixrep/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/miscellaneous.html",
-    "items": [
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/sgd/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/matrixrep/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/posts/webtemplate/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/lu/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/eigen/index.html",
-    "items": [
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/blog.html",
-    "items": [
-      "/posts/bengalitrial/index.html",
-      "/posts/sgd/index.html",
-      "/posts/matmul/index.html",
-      "/posts/lu/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/eigen/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/matrixrep/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/mathbiology/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/someproofs/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/matmul/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/matmul/index.html",
-    "items": [
-      "/posts/eigen/index.html",
-      "/posts/sgd/index.html",
-      "/posts/lu/index.html",
-      "/posts/matrixrep/index.html",
-      "/posts/mathbiology/index.html",
-      "/posts/someproofs/index.html",
-      "/posts/bengalitrial/index.html"
-    ]
+    "items": []
   }
 ]
