@@ -9,7 +9,7 @@
 <meta name="author" content="Rafiq Islam">
 <meta name="dcterms.date" content="2024-09-19">
 
-<title>Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Mohammad Rafiqul Islam</title>
+<title>Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Aref Shahbakhsh</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -142,15 +142,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J42B20L4ER"></script>
-
-<script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-J42B20L4ER', { 'anonymize_ip': true});
-</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="icon" type="image/svg+xml" href="../../_assets/images/favicon.svg">
 <link rel="apple-touch-icon" href="../../_assets/images/apple-touch-icon.png">
@@ -186,15 +177,15 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Mohammad Rafiqul Islam">
-<meta property="og:description" content="Mohammad Rafiqul Islam — postdoctoral research associate in probability at Iowa State University. Langevin dynamics, MCMC, and stochastic optimization.">
-<meta property="og:image" content="https://rispace.github.io/posts/sgd/sgd.png">
-<meta property="og:site_name" content="Mohammad Rafiqul Islam">
+<meta property="og:title" content="Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Aref Shahbakhsh">
+<meta property="og:description" content="M.Sc. in Computer Engineering (Computer Systems Architecture), Sharif University of Technology. Machine learning for computational biology.">
+<meta property="og:image" content="https://aref-shahbakhsh.github.io/posts/sgd/sgd.png">
+<meta property="og:site_name" content="Aref Shahbakhsh">
 <meta property="og:image:height" content="480">
 <meta property="og:image:width" content="672">
-<meta name="twitter:title" content="Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Mohammad Rafiqul Islam">
-<meta name="twitter:description" content="Mohammad Rafiqul Islam — postdoctoral research associate in probability at Iowa State University. Langevin dynamics, MCMC, and stochastic optimization.">
-<meta name="twitter:image" content="https://rispace.github.io/posts/sgd/sgd.png">
+<meta name="twitter:title" content="Implementation of Gradient Descent (GD) and Stochastic Gradient Descent (SGD) – Aref Shahbakhsh">
+<meta name="twitter:description" content="M.Sc. in Computer Engineering (Computer Systems Architecture), Sharif University of Technology. Machine learning for computational biology.">
+<meta name="twitter:image" content="https://aref-shahbakhsh.github.io/posts/sgd/sgd.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -376,8 +367,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../_assets/images/mri-logo.svg" alt="MRI — Mohammad Rafiqul Islam, home" class="navbar-logo light-content">
-    <img src="../../_assets/images/mri-logo.svg" alt="MRI — Mohammad Rafiqul Islam, home" class="navbar-logo dark-content">
+    <img src="../../_assets/images/mri-logo.svg" alt="" class="navbar-logo light-content">
+    <img src="../../_assets/images/mri-logo.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -394,20 +385,16 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html"> 
-<span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Notebook</span></a>
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -1035,7 +1022,7 @@ Local min found  [-0.00340214625218481 0.00597256592237108]</code></pre>
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611532800000" data-listing-file-modified-sort="1794876907254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
+<div class="g-col-1" data-index="0" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611532800000" data-listing-file-modified-sort="1794877652961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
 <a href="../../posts/eigen/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1057,7 +1044,7 @@ Monday, January 25, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNBbGdvcml0aG1pYyUyMENvbXBsZXhpdHklMkNQcm9ncmFtbWluZyUyQ0NvbXB1dGVyJTIwU2NpZW5jZQ==" data-listing-date-sort="1636416000000" data-listing-file-modified-sort="1794876907261" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5041">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNBbGdvcml0aG1pYyUyMENvbXBsZXhpdHklMkNQcm9ncmFtbWluZyUyQ0NvbXB1dGVyJTIwU2NpZW5jZQ==" data-listing-date-sort="1636416000000" data-listing-file-modified-sort="1794877652966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5041">
 <a href="../../posts/lu/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1079,7 +1066,7 @@ Tuesday, November 9, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611187200000" data-listing-file-modified-sort="1794876907264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
+<div class="g-col-1" data-index="2" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01hdGhlbWF0aWNz" data-listing-date-sort="1611187200000" data-listing-file-modified-sort="1794877652969" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
 <a href="../../posts/matrixrep/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1114,12 +1101,12 @@ Thursday, January 21, 2021
   title = {Implementation of {Gradient} {Descent} {(GD)} and
     {Stochastic} {Gradient} {Descent} {(SGD)}},
   date = {2024-09-19},
-  url = {https://rispace.github.io/posts/sgd/},
+  url = {https://aref-shahbakhsh.github.io/posts/sgd/},
   langid = {en}
 }
 </code></pre><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-islam2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Islam, Rafiq. 2024. <span>“Implementation of Gradient Descent (GD) and
-Stochastic Gradient Descent (SGD).”</span> September 19. <a href="https://rispace.github.io/posts/sgd/">https://rispace.github.io/posts/sgd/</a>.
+Stochastic Gradient Descent (SGD).”</span> September 19. <a href="https://aref-shahbakhsh.github.io/posts/sgd/">https://aref-shahbakhsh.github.io/posts/sgd/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -1353,7 +1340,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rispace\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/aref-shahbakhsh\.github\.io");
       const newWindowLabel = "(opens in a new tab)";
       const newWindowNoteId = "quarto-ext-newwindow-label";
       // Links reference one hidden label through aria-describedby, so the
@@ -1817,19 +1804,19 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <div class="foot-col">
-<p><a class="foot-mark" href="../../index.html" aria-label="Home"><img src="../../_assets/images/mri-logo.svg" alt="MRI"></a> <span>Copyright 2026 @ Dr.&nbsp;Rafiq Islam</span> <span>All rights reserved</span> <span><a href="../../LICENSE.txt">License</a></span> <span>Powered by <a href="https://quarto.org/">Quarto</a></span></p>
+<p><a class="foot-mark" href="../../index.html" aria-label="Home"><img src="../../_assets/images/mri-logo.svg" alt="Logo"></a> <span>Copyright 2026 @ Aref Shahbakhsh</span> <span>All rights reserved</span> <span><a href="../../LICENSE.txt">License</a></span> <span>Powered by <a href="https://quarto.org/">Quarto</a></span></p>
 </div>
 </div>   
     <div class="nav-footer-center">
 <div class="foot-col">
-<p><strong>Contact</strong> <span>Department of Mathematics</span> <span>Iowa State University</span> <span>Room 461, Carver Hall</span> <span>411 Morrill Road</span> <span>Ames, IA 50011</span> <span><a href="mailto:mri@iastate.edu">mri@iastate.edu</a></span></p>
+<p><strong>Contact</strong> <span>Department of Computer Engineering</span> <span>Sharif University of Technology</span> <span><a href="mailto:aref.shahbakhsh@sharif.edu">aref.shahbakhsh@sharif.edu</a></span></p>
 </div>
 </div>
     <div class="nav-footer-right">
 <div class="foot-col">
 <strong>Connect</strong>
 <div class="foot-links">
-<p><a href="mailto:mri@iastate.edu"><i class="bi bi-envelope"></i>Email</a> <a href="https://github.com/rispace"><i class="bi bi-github"></i>GitHub</a> <a href="https://www.linkedin.com/in/mohammad-rafiqul-islam/"><i class="bi bi-linkedin"></i>LinkedIn</a> <a href="https://scholar.google.com/citations?user=gTz5r68AAAAJ&amp;hl=en"><i class="bi bi-mortarboard"></i>Google Scholar</a> <a href="https://youtube.com/@quanttube"><i class="bi bi-youtube"></i>YouTube</a> <a href="https://twitter.com/rafiqr35"><i class="bi bi-twitter"></i>Twitter</a></p>
+<p><a href="mailto:aref.shahbakhsh@sharif.edu"><i class="bi bi-envelope"></i>Email</a> <a href="https://github.com/aref-shahbakhsh"><i class="bi bi-github"></i>GitHub</a> <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><i class="bi bi-linkedin"></i>LinkedIn</a> <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID&amp;hl=en"><i class="bi bi-mortarboard"></i>Google Scholar</a></p>
 </div>
 </div>
 </div>
