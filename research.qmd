@@ -2,6 +2,7 @@
 pagetitle: "Research"
 description: "Deep learning for computational biology: graph neural networks and language models for mRNA localization and antibody paratope prediction."
 page-layout: custom
+title-block-style: none
 ---
 
 ::: {.wrap}

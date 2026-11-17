@@ -2,6 +2,7 @@
 pagetitle: "Blog"
 description: "Tutorials and notes on generative models and machine learning by Aref Shahbakhsh."
 page-layout: custom
+title-block-style: none
 listing:
   id: posts-listing
   contents: posts

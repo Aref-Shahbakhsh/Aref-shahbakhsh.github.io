@@ -2,6 +2,7 @@
 pagetitle: "Projects"
 description: "Software, hardware, and web projects by Aref Shahbakhsh."
 page-layout: custom
+title-block-style: none
 ---
 
 ::: {.wrap}
