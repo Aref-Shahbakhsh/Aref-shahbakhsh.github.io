@@ -11,7 +11,7 @@ website:
   title: "Aref Shahbakhsh"
   description: "M.Sc. in Computer Engineering (Computer Systems Architecture), Sharif University of Technology. Machine learning for computational biology."
   site-url: "https://aref-shahbakhsh.github.io"
-  favicon: "_assets/images/favicon.ico"
+  favicon: "_assets/images/favicon.svg"
   image: "_assets/images/Avatar.jpg"
   open-graph: true
   twitter-card: true
