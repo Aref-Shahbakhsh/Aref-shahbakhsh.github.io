@@ -6,15 +6,22 @@ The site is adapted from the open-source (MIT) Quarto academic-website template 
 
 ## Structure
 
-| File | Page |
+| File | Purpose |
 |---|---|
-| `index.qmd` | Home |
-| `research.qmd` | Research, publications, theses, teaching |
+| `index.qmd` | Home: intro, research spotlight, news, latest posts |
+| `about.qmd` | Background and interests |
+| `research.qmd` | Publications and theses |
+| `projects.qmd` | Software and hardware projects |
+| `blog.qmd` | Blog index (lists everything in `posts/`) |
 | `cv.qmd` | CV (PDF in `_assets/documents/`) |
-| `about.qmd` | About |
-| `blog.qmd` | Blog and projects |
-| `404.qmd` | Not-found page |
+| `posts/` | One folder per blog post (`posts/<name>/index.qmd`) |
 | `_quarto.yml` | Site configuration, navbar, footer |
+
+## Writing a post
+
+1. Copy `posts/_post-template/` to `posts/my-new-post/`.
+2. Edit `index.qmd` (title, date, categories, content). Put images in the same folder.
+3. Commit and push. The post appears on the Blog page and the home page automatically.
 
 ## Local preview
 

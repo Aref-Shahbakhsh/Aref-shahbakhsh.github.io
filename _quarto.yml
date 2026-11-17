@@ -33,14 +33,16 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: research.qmd
-        text: Research
-      - href: cv.qmd
-        text: CV
       - href: about.qmd
         text: About
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
       - href: blog.qmd
         text: Blog
+      - href: cv.qmd
+        text: CV
 
   page-footer:
     border: false

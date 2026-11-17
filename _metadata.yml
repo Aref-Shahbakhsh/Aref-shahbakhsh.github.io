@@ -1,0 +1,5 @@
+# Options shared by every post in this folder
+author: "Aref Shahbakhsh"
+toc: true
+toc-depth: 3
+date-format: "MMM D, YYYY"

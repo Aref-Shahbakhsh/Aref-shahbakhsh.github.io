@@ -103,21 +103,3 @@ page-layout: custom
 :::
 :::
 :::
-
-::: {.band .tint}
-::: {.wrap}
-::: {.band-head}
-<div><h2 id="talks">Teaching, workshops &amp; outreach</h2></div>
-:::
-
-<ul class="talks">
-<li><time>2024 – 25</time><div><span class="t">Artificial Intelligence Staff (Head), Hardwar event</span><span class="where">Sharif University of Technology · Fall 2024 &amp; Spring 2025</span></div><span class="kind">Organizer</span></li>
-<li><time>Spring 2025</time><div><span class="t">Science author: explaining AI models for general readers</span><span class="where">Byte Magazine</span></div><span class="kind">Writing</span></li>
-<li><time>Spring 2024</time><div><span class="t">Winter Seminar Series (Advanced Topics in Computer Science)</span><span class="where">Workshop</span></div><span class="kind">Workshop</span></li>
-<li><time>Fall 2023</time><div><span class="t">Theory of Formal Languages and Automata · Computer Networks</span><span class="where">Sharif University of Technology · Instructors: Dr. M. Dolati, Dr. L. Arshadi</span></div><span class="kind">TA</span></li>
-<li><time>Spring 2023</time><div><span class="t">Hugging Face: A Platform to Democratize Open-Source AI</span><span class="where">Workshop</span></div><span class="kind">Workshop</span></li>
-<li><time>Spring 2023</time><div><span class="t">Introduction to Bioinformatics</span><span class="where">Sharif University of Technology · Instructor: Dr. S. Akbari</span></div><span class="kind">TA</span></li>
-<li><time>2018 – 20</time><div><span class="t">Data Structures · Data Bases · Fundamentals of Programming</span><span class="where">University of Sistan and Baluchestan</span></div><span class="kind">TA</span></li>
-</ul>
-:::
-:::

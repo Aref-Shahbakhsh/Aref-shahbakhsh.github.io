@@ -1,5 +1,14 @@
 ---
 page-layout: custom
+listing:
+  id: latest-posts
+  contents: posts
+  type: default
+  sort: "date desc"
+  max-items: 3
+  fields: [title, date, description, categories]
+  sort-ui: false
+  filter-ui: false
 ---
 
 ::: {.wrap}
@@ -88,14 +97,12 @@ page-layout: custom
 
 ::: {.band}
 ::: {.wrap}
-::: {.teach-band}
-<figure class="photo-frame"><img src="_assets/images/Avatar.jpg" alt="Aref Shahbakhsh" loading="lazy"></figure>
-
-::: {}
-<h2 style="margin-top:0">Teaching</h2>
-<p style="color:var(--muted)">I have been a teaching assistant since 2018, from programming fundamentals and data structures to computer networks, automata theory, and bioinformatics. I also enjoy explaining AI to general audiences through workshops and science writing.</p>
-<a class="text-link" href="research.qmd#talks" target="_blank">Teaching, workshops &amp; outreach</a>
+::: {.band-head}
+<h2>Latest from the blog</h2>
+<a class="text-link" href="blog.qmd">All posts</a>
 :::
+
+::: {#latest-posts}
 :::
 :::
 :::

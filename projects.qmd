@@ -1,0 +1,42 @@
+---
+pagetitle: "Projects"
+description: "Software, hardware, and web projects by Aref Shahbakhsh."
+page-layout: custom
+---
+
+::: {.wrap}
+::: {.page-head .wide}
+<h1>Projects</h1>
+<p class="lede">Software and hardware projects I have built. My research projects are on the <a href="research.html">Research</a> page, and my tutorials are on the <a href="blog.html">Blog</a>.</p>
+:::
+
+::: {.card-grid}
+::: {.card}
+<span class="meta">Deep learning · 2025</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/Neural-Generative-Auto-Regressive-Gussian-mixture">Neural autoregressive model with Gaussian mixture</a></h3>
+<p>A neural autoregressive model that uses a Gaussian mixture for each conditional probability. Companion code for a <a href="posts/autoregressive-gmm/">blog post</a>.</p>
+:::
+::: {.card}
+<span class="meta">Hardware + deep learning · 2024</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/Harry_Potter">Harry Potter magic wand</a></h3>
+<p>A magic wand built with an ESP32 and deep learning for the Hardwar 2024 event at Sharif University of Technology.</p>
+:::
+::: {.card}
+<span class="meta">Automation · 2021</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/auto_bot_for_instagram">Instagram bot</a></h3>
+<p>Automates daily activities such as commenting, following, unfollowing, and liking, mimicking human behavior to keep the account safe from bans.</p>
+:::
+::: {.card}
+<span class="meta">Mobile app · 2019</span>
+<h3><a href="https://github.com/Aref-Shahbakhsh/photo_hider_plus">Photo Hider Plus</a></h3>
+<p>An Android app that hides photos from public view, published on Bazaar, the largest Persian app store.</p>
+:::
+::: {.card}
+<span class="meta">Web · 2018</span>
+<h3>University website</h3>
+<p>Frontend development for part of the University of Sistan and Baluchestan website.</p>
+:::
+:::
+:::
+
+<div style="height:4rem"></div>
