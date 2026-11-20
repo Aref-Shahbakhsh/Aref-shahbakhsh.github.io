@@ -10,14 +10,14 @@ title-block-style: none
 ::: {}
 <h1>Research</h1>
 
-<p class="lede">I use deep learning to understand biological sequences and structures. My work so far combines graph neural networks with foundation language models to predict where mRNAs localize in the cell and which antibody residues bind an antigen. I am now extending this toward generative models of biomolecules.</p>
+<p class="lede">
 
-<ul class="r-areas">
-<li><span class="n">I</span><div><b>Representation learning for mRNA.</b> <span class="d">Graph neural networks on secondary structure, fused with sequence embeddings.</span></div></li>
-<li><span class="n">II</span><div><b>Biological language models.</b> <span class="d">Using DNA, RNA, protein, and antibody language models as feature extractors.</span></div></li>
-<li><span class="n">III</span><div><b>Generative models.</b> <span class="d">VAEs, GANs, and diffusion / score-based models for biomolecules.</span></div></li>
-<li><span class="n">IV</span><div><b>Machine learning theory.</b> <span class="d">Why these architectures work, and what guarantees they admit.</span></div></li>
-</ul>
+My research lies at the intersection of machine learning and computational biology, with a particular focus on RNA language models. I am interested in developing and understanding methods that learn meaningful representations of RNA sequences and capture the relationships between sequence, structure, and function.
+
+My work explores machine learning and foundation-model approaches to RNA-related tasks. More broadly, I am interested in building models that go beyond task-specific prediction, enabling them to learn biological patterns, generalize across tasks, and provide insights into the underlying mechanisms of biological systems.
+
+</p>
+
 :::
 
 <div class="glance">
@@ -26,7 +26,7 @@ title-block-style: none
 <ul class="profiles-list">
 <li><a href="https://scholar.google.com/citations?user=8554euoAAAAJ&hl=en&oi=ao"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar<span class="sub">citations &amp; papers</span></span><span class="go">→</span></a></li>
 <li><a href="https://github.com/Aref-Shahbakhsh"><i class="bi bi-github"></i><span>GitHub<span class="sub">github.com/aref-shahbakhsh</span></span><span class="go">→</span></a></li>
-<li><a href="https://www.linkedin.com/in/Aref-Shahbakhsh"><i class="bi bi-linkedin"></i><span>LinkedIn<span class="sub">professional profile</span></span><span class="go">→</span></a></li>
+<li><a href="https://www.linkedin.com/in/Aref-Shahbakhsh"><i class="bi bi-linkedin"></i><span>LinkedIn<span class="sub">LinkedIn profile</span></span><span class="go">→</span></a></li>
 </ul>
 </div>
 :::
@@ -90,16 +90,12 @@ title-block-style: none
 <p>A multi-modal pipeline for predicting localization across five subcellular compartments. A custom message-passing graph neural network learns neighbor embeddings of the mRNA secondary-structure graph, while a DNA/mRNA language model supplies contextual sequence embeddings. ANOVA selects the most informative features, and a One-vs-Rest scheme tailors the inputs of each of the five binary classifiers: four compartments use the combined GNN and language-model features, and one is better predicted by classical k-mer frequencies.</p>
 :::
 
-::: {.card}
-<span class="meta">Independent study · 2024 – present</span>
-<h3>Generative models for biomolecules</h3>
-<p>A systematic study of VAEs, GANs, autoregressive, energy-based, score-based, and diffusion models, with the aim of applying them to the generative and predictive modeling of biomolecules. I document what I learn in a <a href="blog.html">tutorial series</a> with code on <a href="https://github.com/Aref-Shahbakhsh">GitHub</a>.</p>
-:::
+
 
 ::: {.card}
 <span class="meta">B.Sc. thesis · University of Sistan and Baluchestan · Advisor: M. M. Keikha</span>
 <h3>Run Machine Learning Algorithms on News Website</h3>
-<p>Applied machine learning algorithms to data from a news website. Thesis grade: 20/20.</p>
+<p>Applied machine learning algorithms to data from a news website.</p>
 :::
 :::
 :::

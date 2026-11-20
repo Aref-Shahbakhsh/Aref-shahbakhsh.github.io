@@ -88,7 +88,7 @@ title-block-style: none
 </section>
 
 <section class="cvs"><h2>Languages</h2>
-<div class="ent"><span class="t">English</span><span class="s">TOEFL: Reading 20, Listening 20, Speaking 18, Writing 20</span></div>
+<div class="ent"><span class="t">English</span><span class="s">C1</span></div>
 <div class="ent"><span class="t">Persian</span><span class="s">Native</span></div>
 </section>
 

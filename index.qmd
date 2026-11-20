@@ -20,13 +20,13 @@ listing:
 
 <div class="btn-row">
 <a class="btn-r solid" href="research.qmd">Research &amp; papers <i class="bi bi-arrow-right"></i></a>
-<a class="btn-r solid" href="_assets/documents/Aref_Shahbakhsh_cv.pdf"><i class="bi bi-file-earmark-text"></i> CV (PDF)</a>
 <a class="btn-r solid" href="mailto:aref.shahbakhsh@sharif.edu"><i class="bi bi-envelope"></i> Email</a>
 </div>
 
 <div class="hero-meta">
 <span><i class="bi bi-geo-alt"></i> Tehran, Iran</span>
 <span><i class="bi bi-mortarboard"></i> <a href="https://scholar.google.com/citations?user=8554euoAAAAJ&hl=en&oi=ao">Google Scholar</a></span>
+<span><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/aref-shahbakhsh/">LinkedIn</a></span>
 <span><i class="bi bi-github"></i> <a href="https://github.com/Aref-Shahbakhsh">GitHub</a></span>
 <span><i class="bi bi-youtube"></i> <a href="https://www.youtube.com/@Aref_Piano">Piano channel</a></span>
 </div>
@@ -54,7 +54,7 @@ Here, you can learn more about my academic background, research interests, and a
 </p>
 
 <p>
-I also enjoy writing about the things I learn and find interesting. In the <a href="/blog.html">Blog</a> section, I share my thoughts and explorations on machine learning and artificial intelligence. Recently, I have been particularly interested in generative models, and I look forward to sharing more about their mathematical foundations, as well as other exciting topics at the intersection of mathematics and AI.
+I also enjoy writing about the things I learn and find interesting. In the <a href="/blog.html">Blog</a> section, I share my thoughts and explorations on machine learning and artificial intelligence.
 </p>
 
 <p>
@@ -76,7 +76,6 @@ I also genuinely enjoy teaching and mentoring students and helping others explor
 ::: {}
 <h2>News</h2>
 <ul class="news">
-<li><time>aug 2025</time><span>Published a tutorial implementing a <strong>neural autoregressive model with Gaussian-mixture conditionals</strong>, with code on GitHub.</span></li>
 <li><time>apr 2025</time><span>Started a tutorial series on generative models with a post on <strong>variational autoencoders</strong>.</span></li>
 <li><time>spring 2025</time><span>Wrote as a <strong>science author for Byte Magazine</strong>, explaining AI models for a general readership.</span></li>
 <li><time>2025</time><span><strong>LGLoc</strong>, a language model-driven graph neural network for mRNA localization, was published in <em>Scientific Reports</em> (co-first author).</span></li>
